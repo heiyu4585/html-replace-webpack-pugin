@@ -1,0 +1,25 @@
+{
+  "name": "html-replace-webpack-pugin",
+  "version": "1.0.0",
+  "description": "替换webpack流生成后替换指定的内容",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wangning",
+  "license": "ISC",
+  "keywords": [
+    "webpack",
+    "replace"
+  ],
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heiyu4585/html-replace-webpack-pugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heiyu4585/html-replace-webpack-pugin/issues"
+  },
+  "homepage": "https://github.com/heiyu4585/html-replace-webpack-pugin#readme"
+}
