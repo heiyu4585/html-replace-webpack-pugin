@@ -18,13 +18,7 @@ var htmlReplaceWepackPlugin = require('html-replace-wepack-plugin');
        // .....
           new HtmlReplaceWebpackPlugin({
               from:"sourceMappingURL=",
-              to:"sourceMappingURL=http://10.1.8.12:7000/load?src=medplus_h5/",
-              toServer:{
-                  from: 'medplus_h5/js', // 要发送的文件目录
-                  to:   'medplus_h5', // 在 sourcemap 文件服务器上保存的目录
-                  match: '**/*.map', // 符合指定规则的文件
-                  server: 'http://10.1.8.12:7000/upload' // sourcemap 文件服务器接受数据的接口
-              }
+              to:"sourceMappingURL=http://192.168.1.0"
           }),
       ],
   };
