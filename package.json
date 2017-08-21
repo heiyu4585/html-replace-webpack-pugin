@@ -1,6 +1,6 @@
 {
   "name": "html-replace-webpack-pugin",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "替换webpack流生成后替换指定的内容",
   "main": "index.js",
   "scripts": {

@@ -13,7 +13,8 @@ function HtmlResWebpackPlugin(opt) {
 HtmlResWebpackPlugin.prototype.apply = function(compiler, callback) {
     
     var replaceFrom = this.options.from,
-        replaceTo = this.options.to;
+        replaceTo = this.options.to,
+        callBack = this.options.callBack;
 
     compiler.plugin('emit', function(compilation, callback) {
         // Explore each chunk (build output):
@@ -34,7 +35,9 @@ HtmlResWebpackPlugin.prototype.apply = function(compiler, callback) {
         });
         compiler.plugin('done', function() {
             /*构建完后需要执行的事情*/
-          console.log("执行完成")
+            if(typeof callBack === "function"){
+                callback();
+            }
         });
         callback();
     });

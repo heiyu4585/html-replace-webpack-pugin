@@ -18,7 +18,10 @@ var htmlReplaceWepackPlugin = require('html-replace-wepack-plugin');
        // .....
           new HtmlReplaceWebpackPlugin({
               from:"sourceMappingURL=",
-              to:"sourceMappingURL=http://192.168.1.0"
+              to:"sourceMappingURL=http://192.168.1.0",
+              callBack:function(){
+                console.log("webpack执行完成后调用")
+              }
           }),
       ],
   };
